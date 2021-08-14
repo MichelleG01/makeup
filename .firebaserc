@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "user-97a3e": {
+      "hosting": {
+        "app": [
+          "user-97a3e"
+        ]
+      }
+    }
+  }
+}

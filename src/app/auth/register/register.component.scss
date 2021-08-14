@@ -1,0 +1,61 @@
+ion-item {
+    --inner-padding-bottom: 0;
+    --inner-padding-end: 0;
+    --inner-padding-start: 0 !important;
+    --inner-padding-top: 0;
+    margin-top: 20px;
+}
+
+.div-content-card {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    .card-register {
+        padding: 36px 32px 36px 32px;
+        border-radius: 18px;
+        height: 506px;
+        width: 600px;
+        position: relative;
+        max-width: 90%;
+        margin: auto;   
+        z-index: 2;
+        display: flex; 
+        .content-form {
+            width: 90%;
+            padding-left: 36px;
+            @media (max-width: 600px) {
+                width: 100%;
+                padding-left: 0px;
+            }
+            .title {
+                text-align: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 44px;
+                color: #4B4B4B;
+            }
+            .error-label {
+                color: #CF3C4F;
+                font-weight: normal;
+                font-size: 12px;
+            }
+            .btn-submit {
+                width: 146px;
+                margin: 0 auto;
+            }
+            .show-pass {
+                position: absolute;
+                right: 0;
+                cursor: pointer;
+                margin-right: 56px;
+                margin-top: -20px;
+                z-index: 100;
+                font-size: 20px;
+            }
+        }  
+    }
+}

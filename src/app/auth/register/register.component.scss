@@ -14,21 +14,18 @@ ion-item {
     justify-content: center;
     align-items: center;
     position: absolute;
-    .card-login {
+    .card-register {
         padding: 36px 32px 36px 32px;
         border-radius: 18px;
         height: 506px;
-        width: 909px;
+        width: 600px;
         position: relative;
         max-width: 90%;
         margin: auto;   
         z-index: 2;
         display: flex; 
-        .photo-mobile {
-            display: none;
-        } 
         .content-form {
-            width: 50%;
+            width: 90%;
             padding-left: 36px;
             @media (max-width: 600px) {
                 width: 100%;
@@ -49,6 +46,15 @@ ion-item {
             .btn-submit {
                 width: 146px;
                 margin: 0 auto;
+            }
+            .show-pass {
+                position: absolute;
+                right: 0;
+                cursor: pointer;
+                margin-right: 56px;
+                margin-top: -20px;
+                z-index: 100;
+                font-size: 20px;
             }
         }  
     }

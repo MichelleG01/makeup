@@ -1,0 +1,32 @@
+<div class="div-content-card">
+  <ion-card class="card-login">
+    <div class="content-form">
+
+      <form [formGroup]="loginForm">
+        <h1 class="title">Bienvenido</h1>
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input formControlName="email" autocomplete="off"
+          autofocus placeholder="Ingrese el correo" ngDefaultControl></ion-input>
+        </ion-item>
+        <br>
+        <ion-item class="ion-no-padding">
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" ngDefaultControl [type]="showPass ? 'text' : 'password'"></ion-input>
+        </ion-item>
+        <ion-icon class="show-pass" name="eye" *ngIf="!showPass" (click)="showPass = true"></ion-icon>
+        <ion-icon class="show-pass" name="eye-off" *ngIf="showPass" (click)="showPass = false"></ion-icon>
+        <br>
+        <br>
+        <br>
+        <ion-button class="btn-submit" expand="block" (click)="onLogin()">Continuar</ion-button>
+        <br>
+        <br>
+        <p>¿Crear una cuenta? <a [routerLink]="['/register']"> Crear cuenta</a></p>
+        <br>
+        <br>
+      </form>
+
+    </div>
+  </ion-card>
+</div>
